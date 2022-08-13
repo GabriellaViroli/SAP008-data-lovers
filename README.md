@@ -36,9 +36,9 @@ parte direita.
 
 ## 2. Resumo do projeto
 
-O Data-lovers é o segundo projeto de uma _página web_, desenvolvido durante o Bootcamp da turma SAP008, da Laboratória Brasil.
+O Data-lovers é o segundo projeto desenvolvido durante o Bootcamp da turma SAP008, da Laboratória Brasil.
 
-Este projeto se trata de uma aplicação web de manipulação de um aglomerado de dados, previamente disponibilizado no repositório da Laboratória. Para o nosso projeto, escolhemos trabalhar com os dados da temática Harry Potter. 
+Este projeto se trata de uma aplicação web de manipulação de um banco de dados, previamente disponibilizado no repositório da Laboratória. Para o nosso projeto, escolhemos trabalhar com os dados da temática Harry Potter. 
 
 Para a elaboração do projeto, utilizamos as ferramentas Notion (para o planning das tasks), Metroretro (para a construção das histórias de usuários e para as retrospectivas de nossas sprints) e Figma (para o protótipo navegável de alta fidelidade). Ademais, para a criação da página, utilizamos HTML, CSS, JavaScript Vanilla e Jest como ferramentas de programação. 
 
@@ -317,9 +317,7 @@ Este projeto se trata de uma aplicação web de manipulação de um aglomerado d
 
 Para a elaboração do projeto, utilizamos as ferramentas Notion (para o planning das tasks), Metroretro (para a construção das histórias de usuários e para as retrospectivas de nossas sprints) e Figma (para o protótipo navegável de alta fidelidade). Ademais, para a criação da página, utilizamos HTML, CSS, JavaScript Vanilla e Jest como ferramentas de programação. 
 
-A criação das histórias de usuário foi feita sob escopo da Metodologia Ágil, utilizando a criação de Personas e da perspectiva INVEST. Além disso, nossas histórias foram pensadas a partir da escolha da temática. 
-
-Para a elaboração de um projeto que atendesse às necessidades dos usuários, criamos um protótipo de alta fidelidade navegável. Através deste protótipo, pudemos criar e obter resultados de uma pesquisa de usabilidade, dos quais recebemos feedbacks que foram implementados no nosso produto final.
+Para a criação de um projeto que atendesse às necessidades dos usuários, criamos um protótipo de alta fidelidade navegável. Através deste protótipo, pudemos realizar um teste de usabilidade, para a qual recebemos feedbacks que foram implementados no nosso produto final.
 
 Ademais, a lógica do projeto foi construída com base na manipulação de dados previamente selecionados de acordo com as histórias de usuário criadas, de modo que os filtros escolhidos (personagens, livros e feitiços) foram selecionados com base nas necessidades dos nossos usuários, além da inclusão de mudanças na interface vindas dos feedbacks do teste de usabilidade. 
 
@@ -352,16 +350,20 @@ Terceira etapa: tornamos nosso protótipo navegável.
 
 ## 6. Testes de usabilidade
 
-Durante a criação do protótipo de alta fidelidade, nós consideramos a forma como nossa página essencialmente exibe apenas dados em formato de texto, por se tratar de informativos de conteúdo literário. Com isso, pensando em entregar maior valor de uso aos usuários, realizamos um teste de usabilidade com duas pessoas. Para o teste, apresentamos a tarefa de que, através do protótipo, agora navegável, elas acessassem a seção que exibe informações detalhadas do personagem Harry Potter.  
+Durante a criação do protótipo de alta fidelidade, conduzimos um teste de usabilidade com dois usuários, com o objetivo de verificar se o protótipo que estávamos criando atenderia às funcionalidades esperadas. Para o teste, apresentamos a tarefa de que, através do protótipo navegável, eles acessassem o card que exibe informações detalhadas do personagem "Harry Potter".  
 
 Após a realização do teste, solicitamos aos usuários seus feedbacks com relação à usabilidade, considerando os níveis de acessibilidade e intuitividade apresentados na página. Com o feedback, buscamos entender quais dificuldades eles encontraram; quais features da página apresentaram maior valor para a usabilidade deles; qual feature faltava para que a experiência deles tivesse maior valor; e se tinham sugestões, de acordo com suas necessidades, para que a experiência fosse ainda mais positiva e intuitiva. 
 
-A partir da análise dos feedbacks obtidos, implementamos as seguintes adições e mudanças ao projeto:
+O fluxo de navegação ocorreu tranquilamente, no entanto recebemos outros feedbacks que fizeram com que adaptássemos nosso protótipo. Inicialmente, o protótipo tinha um gif como background e ambos usuários relataram que aquilo atrapalhou a leitura. Por conta disso, trocamos o gif por uma imagem estática e fizemos mais algumas alterações, tais como a inclusão de um card informativo na homepage que contextualizasse o usuário para as funcionalidades do site, além disso, aumentamos a fonte, e padronizamos o design dos cards de lista de personagens e detalhes de personagem.
 
-1. Aumentamos o tamanho das fontes, dos botões, e removemos o fundo animado, a modo de proporcionar maiores padrões de acessibilidade para o usuário;
+Deste modo, conforme análise dos feedbacks obtidos, implementamos as seguintes adições e mudanças ao projeto:
+
+1. Aumentamos o tamanho das fontes, dos botões, e removemos o fundo animado, que era antes um gif, e alteramos ele por uma imagem estática, a modo de proporcionar maiores padrões de acessibilidade para o usuário;
 2. Adicionamos uma seção introdutória, com descrição sobre a funcionalidade da aplicação, à nossa página inicial, a modo de contextualizar e informar ao usuário do que se tratava nossa página web;
 3. Mudamos nossa paleta de cores para tons mais escuros, a modo de proporcionar maior conforto na leitura do usuário;
 5. Organizamos a disposição dos elementos das listas em ordem alfabética, a modo de facilitar a pesquisa e visualização do dado desejado pelo usuário.
+
+Ademais, considerando que nossa página web essencialmente fornece ao usuário dados textuais, pelo conteúdo tratado ser de cunho literário, a realização dos testes também foi importante para conferir o nível de praticidade e conforto que o usuário encontra ao acessar a página no que diz respeito ao quesito de exibição de informações.  
 
 ## 7. Resultado final do protótipo
 
@@ -374,7 +376,7 @@ Versões Desktop e Mobile:
 
 ## 8. Objetivos e funcionamento da aplicação (implementação da interface de usuário)
 
-A funcionalidade e as features de nossa página foram decididas com base nas histórias dos nossos usuário. Com base nisso, o objetivo da nossa aplicação é atender às necessidades dos nossos usuários com a disponibilização de informações acerca da saga de livros "Harry Potter", de forma que eles tenham acesso a informações detalhadas disponíveis sobre seus tópicos de interesse e necessidade. 
+As funcionalidades de nossa página foram decididas com base nas histórias dos nossos usuário. Com base nisso, o objetivo da nossa aplicação é atender às necessidades dos nossos usuários com a disponibilização de informações acerca da saga de livros "Harry Potter", de forma que eles tenham acesso a informações detalhadas disponíveis sobre seus tópicos de interesse e necessidade. 
 
 Com base nas histórias de usuários que obtivemos, os maiores interesses de nossos usuários seria de conseguir acessar dados acerca dos personagens, feitiços e livros da saga Harry Potter.
 
