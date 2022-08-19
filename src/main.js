@@ -9,7 +9,7 @@ const btnCharacters = document.getElementById('btn-characters');
 
 btnCharacters.addEventListener('click',
 function displayCharsResult(){
-    mainFilters.displayChars(dataBaseCharacters);
+    mainFilters.displayCharactersList(dataBaseCharacters);
     document.getElementById('welcome-section').style.display = 'none';
     document.getElementById('books-list').style.display = 'none';
     document.getElementById('spells-list').style.display = 'none';
@@ -24,7 +24,7 @@ const btnBooks = document.getElementById('btn-books');
 
 btnBooks.addEventListener('click',
 function displayBooksResult(){
-    mainFilters.displayBooks(dataBaseBooks);
+    mainFilters.displayBooksList(dataBaseBooks);
     document.getElementById('welcome-section').style.display = 'none';
     document.getElementById('characters-list').style.display = 'none';
     document.getElementById('spells-list').style.display = 'none';
@@ -38,7 +38,7 @@ const btnSpells = document.getElementById('btn-spells');
 
 btnSpells.addEventListener('click', 
 function displaySpellsResult(){
-    mainFilters.displaySpells(dataBaseSpells);
+    mainFilters.displaySpellsList(dataBaseSpells);
     document.getElementById('welcome-section').style.display = 'none';
     document.getElementById('books-list').style.display = 'none';
     document.getElementById('characters-list').style.display = 'none';
