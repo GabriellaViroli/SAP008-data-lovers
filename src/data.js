@@ -1,19 +1,12 @@
 import data from "./data/harrypotter/data.js";
 
-export const mainFilters = {displayChars, displayBooks, displaySpells};
+export const mainFilters = {displayCharactersList, displayBooksList, displaySpellsList, filterCharactersByHouses};
 
-function displayChars() {
-  let charactersResult = [];
-  let allCharacters = data.characters;
-
-  for(let i = 0; i < allCharacters.length; i++){
-    let charactersList = allCharacters[i].name;
-    charactersResult.push(charactersList);
-  }
-  return charactersResult
-}
-
-function displayBooks() {
+function displayCharactersList(names){
+  return names.map((characters) => characters.name)
+ }
+ 
+function displayBooksList(dataBaseBooks) {
   let booksResult = [];
   let allBooks = data.books;
 
@@ -24,7 +17,7 @@ function displayBooks() {
   return booksResult
 }
 
-function displaySpells(){
+function displaySpellsList(dataBaseSpells){
   let spellsResult = [];
   let allSpells = data.spells;
 
@@ -34,5 +27,19 @@ function displaySpells(){
   }
   return spellsResult
 }
-//.name é o valor do campo lá no data.js da pasta harrypotter, funciona pra imprimir os outros dados do msm jeito; futuramente, trocar isso pra ".filter()"
-//template string `string ${value}´
+
+function filterCharactersByHouses(dataBaseCharacters){
+  const filterResult = [];
+  dataBaseCharacters.filter((character) => {
+    if (character.house === 'Gryffindor'){
+      filterResult.push(character.name);
+    }else if (character.house === 'Ravenclaw'){
+      filterResult.push(character.name);
+    }else if (character.house === 'Hufflepuff'){
+      filterResult.push(character.name);
+    }else if (character.house === 'Slytherin'){
+      filterResult.push(character.name);
+    }
+  });
+  return filterResult.join('');
+}

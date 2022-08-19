@@ -1,21 +1,22 @@
 import {mainFilters} from './data.js';
+import data from './data/harrypotter/data.js';
+
+const dataBaseCharacters = data.characters;
+const dataBaseBooks = data.books; 
+const dataBaseSpells = data.spells; 
 
 const btnCharacters = document.getElementById('btn-characters');
 
 btnCharacters.addEventListener('click',
 function displayCharsResult(){
-    let characters = mainFilters.displayChars();
-    let charactersFormatted = characters.map((name) => {
-        return `<li><a href='?${name}'> ${name} </a></li>`
-    })
-    
+    mainFilters.displayChars(dataBaseCharacters);
     document.getElementById('welcome-section').style.display = 'none';
     document.getElementById('books-list').style.display = 'none';
     document.getElementById('spells-list').style.display = 'none';
     document.getElementById('characters-list').style.display = 'block';
 
     const charactersResult = document.getElementById('characters-content');
-    charactersResult.innerHTML = charactersFormatted;
+    return charactersResult.innerHTML = dataBaseCharacters.map(chars => `<li> ${chars.name}</li>`).join('');
 
 })
 
@@ -23,7 +24,7 @@ const btnBooks = document.getElementById('btn-books');
 
 btnBooks.addEventListener('click',
 function displayBooksResult(){
-    const books = mainFilters.displayBooks();
+    mainFilters.displayBooks(dataBaseBooks);
     document.getElementById('welcome-section').style.display = 'none';
     document.getElementById('characters-list').style.display = 'none';
     document.getElementById('spells-list').style.display = 'none';
@@ -37,7 +38,7 @@ const btnSpells = document.getElementById('btn-spells');
 
 btnSpells.addEventListener('click', 
 function displaySpellsResult(){
-    const spells = mainFilters.displaySpells();
+    mainFilters.displaySpells(dataBaseSpells);
     document.getElementById('welcome-section').style.display = 'none';
     document.getElementById('books-list').style.display = 'none';
     document.getElementById('characters-list').style.display = 'none';
